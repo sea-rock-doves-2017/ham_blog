@@ -11,6 +11,11 @@ describe Article do
     it 'is invalid without a title' do
       expect(invalid_article).to_not be_valid
     end
-    it 'validates presence of body'
+    it 'is valid with a body' do
+      expect(article).to be_valid
+    end
+    it 'is invalid without a body' do
+      expect(invalid_article).to_not be_valid
+    end
   end
 end
