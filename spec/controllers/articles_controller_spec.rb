@@ -14,6 +14,10 @@ describe ArticlesController do
     end
   end
   describe '#show' do
+    it 'responds with a status of 200' do
+      get :show, params: {id: article.id}
+      expect(response.status).to eq(200)
+    end
   end
   describe '#new' do
   end

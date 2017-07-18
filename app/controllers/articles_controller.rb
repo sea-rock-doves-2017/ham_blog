@@ -4,6 +4,10 @@ class ArticlesController < ApplicationController
     render 'articles/index'
   end
 
+  def show
+    'hi'
+  end
+
   def update
   end
 end
