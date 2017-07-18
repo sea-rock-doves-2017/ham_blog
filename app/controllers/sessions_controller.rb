@@ -4,6 +4,7 @@ class SessionsController < ApplicationController
   end
 
   def create
+    redirect_to articles_path
   end
 
   def destroy
