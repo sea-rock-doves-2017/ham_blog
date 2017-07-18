@@ -18,6 +18,10 @@ describe ArticlesController do
       get :show, params: {id: article.id}
       expect(response.status).to eq(200)
     end
+    it 'assigns the @article instance variable' do
+      get :show, params: {id: article.id}
+      expect(assigns[:article]).to eq(article)
+    end
   end
   describe '#new' do
   end
