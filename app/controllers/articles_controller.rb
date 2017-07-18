@@ -3,4 +3,7 @@ class ArticlesController < ApplicationController
     @articles = Article.all
     render 'articles/index'
   end
+
+  def update
+  end
 end
